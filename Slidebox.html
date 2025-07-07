@@ -1,0 +1,74 @@
+<html>
+    <style>
+    *    {
+        margin: 0px;
+        padding: 0px;
+    }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        #parentbox{
+            width: 100%;
+            height: 100%;
+            background-color: lightgrey;
+            position: relative;
+        }
+        #childbox{
+            width: 50%;
+            height: 50%;
+            background-color: #3b3b3b;
+            transition: 0.5s;
+            border-radius: 5px;
+            position: relative;
+            top:50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            z-index: 3;
+                    }
+        #childbox:hover{
+            
+            top: 40%;
+            transition: 0.5s ease-in-out;
+        }
+        #slide{
+            width: 50%;
+            height:50%;
+            background-color: white;
+            position: relative;
+            border-radius: 5px;
+            top:0%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            z-index: 1;
+            box-shadow: 0px 0px 0px black,0px 0px 0px white,
+          inset 4px 4px 12px black,
+          inset -4px -4px 12px white;
+        }
+        #btn{
+            width: 75%;
+            height: 15%;
+            border-radius: 10px;
+            background-color: lightblue;
+            position:absolute;
+            transform: translate(-50%,-50%);
+            top: 89%;
+            left: 50%;
+            z-index: 2;
+            box-shadow:
+            4px 4px 12px black,
+            -4px -4px 12px white,
+            inset 0px 0px 0px white,
+            inset 0px 0px 0px black;
+        }
+        </style>
+              <body>
+
+        <div id="parentbox">
+            <div id=childbox></div>
+            <div id="slide" class="slidet">
+                <div id=btn></div>
+            </div>
+        </div>
+    </body>
+</html>
